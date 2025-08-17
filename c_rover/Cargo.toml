@@ -1,0 +1,18 @@
+[package]
+name = "c_rover"
+version = "0.0.2"
+edition = "2024"
+
+[dependencies]
+serde = { version = "1.0.219", features = ["derive"] }
+rover = { path = "../rover" }
+libc = "0.2.2"
+thiserror = "2.0.15"
+serde_json = "1.0.142"
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[build-dependencies]
+cbindgen = "0.29.0"
