@@ -107,7 +107,6 @@ pub mod test {
     use super::*;
     use std::ffi::CString;
 
-    // TODO: check the output type
     #[test]
     fn simulated_main_function() {
         let top_right = CString::new("5 5").unwrap().into_raw();
